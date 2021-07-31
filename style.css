@@ -1,0 +1,20 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.margin {
+    margin-top: 20px;;
+}
+
+#button {
+    margin-left: 10px;
+}
+
+body {
+    background-image: url('https://www.elisa-tek.com/wp-content/uploads/2018/08/real-space-BG.png');
+}
+
+.text {
+    color: white;
+}

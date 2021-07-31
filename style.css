@@ -15,6 +15,7 @@ div {
 
 body {
     background-image: url('https://www.elisa-tek.com/wp-content/uploads/2018/08/real-space-BG.png');
+    background-size: cover;
 }
 
 .text {

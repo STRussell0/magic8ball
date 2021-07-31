@@ -48,8 +48,10 @@ button.addEventListener('click', function() {
     if (input.value < 1) {
         alert('Please ask a question!');
 }   else {
+    shake();
     ask.innerHTML = response[Math.floor(Math.random() * response.length)];
-    setTimeout(hideAll, 3000);
+    setTimeout(hideAll, 2000);
+    
 }});
 
 // This is the second button. It starts out being hidden, but will appear after the first button is pressed. This button has an event that will perform a function created below that will return all elements to their starting positions.
@@ -81,6 +83,14 @@ function returnAll() {
     button.style.display = 'block';
     start.src = './magic/magic8ball_extra.png';
     button2.style.display = 'none';
+}
+
+function shake() {
+    start.classList.add('shake');
+
+    setTimeout(function() {
+        start.classList.remove('shake');
+    }, 2000)
 }
 
 //Problems I had with this project:

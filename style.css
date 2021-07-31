@@ -21,3 +21,23 @@ body {
 .text {
     color: white;
 }
+
+/* Amazing animation I learned about online. Super cool concept I hope to learn more from doing  */
+
+.shake {
+    animation: shake 2s;
+}
+
+@keyframes shake {
+    0% {transform: translate(4px, 4px) rotate(10deg); }
+    10% {transform: translate(-4px, -4px) rotate(-10deg); }
+    20% {transform: translate(-4px, 4px) rotate(1deg); }
+    30% {transform: translate(-4px, -4px) rotate(-1deg); }
+    40% {transform: translate(4px, 4px) rotate(10deg); }
+    60% {transform: translate(-4px, -4px) rotate(-1deg); }
+    60% {transform: translate(4px, 4px) rotate(1deg); }
+    70% {transform: translate(5px, -4px) rotate(10deg); }
+    80% {transform: translate(-4px, -4px) rotate(-10deg); }
+    90% {transform: translate(4px, 4px) rotate(0deg); }
+    100% {transform: translate(-4px, -4px) rotate(-1deg); }
+}

@@ -1,9 +1,8 @@
-.div {
-    position: relative;
-    top: 25vh;
+div {
     display: flex;
-    flex-direction: column;
-    align-items: center;
+    justify-content: center;
+    position: relative;
+    top: 22vh;
 }
 
 .margin {
@@ -16,7 +15,6 @@
 
 body {
     background-image: url('https://www.elisa-tek.com/wp-content/uploads/2018/08/real-space-BG.png');
-    background-size: cover;
 }
 
 .text {

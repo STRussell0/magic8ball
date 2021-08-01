@@ -85,6 +85,8 @@ function returnAll() {
     button2.style.display = 'none';
 }
 
+// function that will add a class that will animate the magic 8 ball, but after 2 seconds, it will be removed.
+
 function shake() {
     start.classList.add('shake');
 

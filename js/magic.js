@@ -98,3 +98,5 @@ function shake() {
 //Problems I had with this project:
 
 //Initially tried to do GetElementByID for all elements, but could not change their display value. Was able to fix by using QuerySelector
+
+//Had to use the entirety of math.random instead of giving a variable the value of math.random. While console.log would give me a new answer, hitting the button would result in the same answer given each time.

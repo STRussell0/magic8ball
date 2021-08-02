@@ -14,6 +14,7 @@ div {
 }
 
 body {
+    height: 100vh;
     background-image: url('https://www.elisa-tek.com/wp-content/uploads/2018/08/real-space-BG.png');
     background-size: cover;
 }
@@ -40,10 +41,4 @@ body {
     80% {transform: translate(-4px, -4px) rotate(-10deg); }
     90% {transform: translate(4px, 4px) rotate(0deg); }
     100% {transform: translate(-4px, -4px) rotate(-1deg); }
-}
-
-@media only screen and (max-width: 1200px) {
-    body {
-        background-size: auto;
-    }
 }

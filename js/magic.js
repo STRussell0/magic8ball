@@ -56,14 +56,12 @@ button.addEventListener('click', function() {
     
 }});
 
-// This is the second button. It starts out being hidden, but will appear after the first button is pressed. This button has an event that will perform a function created below that will return all elements to their starting positions.
+// This is the second button. It starts out being hidden, but will appear after the first button is pressed. This button has an event that will perform a function created below that will return all elements to their starting positions. Also was able to clean up button2's eventlistener code to one line by using an arrow function, which does not require the word "function", and since it is on one line, it does not require curly braces.
 
 const button2 = document.querySelector('.button');
 button2.innerHTML = 'Try again?';
 button2.style.display = 'none';
-button2.addEventListener('click', function () {
-    returnAll();
-})
+button2.addEventListener('click', () => returnAll())
 
 
 // hideAll will hide the original buttons, but will allow the Try Again button to appear. It also changes the label to display the input value.

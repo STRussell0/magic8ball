@@ -90,9 +90,7 @@ function returnAll() {
 function shake() {
     start.classList.add('shake');
 
-    setTimeout(function() {
-        start.classList.remove('shake');
-    }, 2000)
+    setTimeout(() => start.classList.remove('shake'), 2000)
 }
 
 //Problems I had with this project:

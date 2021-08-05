@@ -23,6 +23,8 @@ const answer = [
     './magic/magic8ball_20.png',
 ]
 
+// An array of potential "thinking" responses while it comes up with an answer
+
 const response = ['One moment please...', 'Hold on just a moment...', 'Give me a few seconds...', 'Calculating response...'];
 
 // Used getElementByID for the image. Started with the extra image (looks better than start to me personally)
@@ -39,7 +41,7 @@ ask.style.fontSize = '36px';
 
 const input = document.querySelector('input');
 
-// First button has an click event where it will perform a function created below that hides all elements except the image. The event also changes the source of the image to a random one from the list of 20. This button will throw an alert out if you attempt to press it without entering anything into the input field.
+// First button has an click event where it will perform a function created below that hides all elements except the image. The event also changes the source of the image to a random one from the list of 20. This button will throw an alert out if you attempt to press it without entering anything into the input field. It also now performs the shake function.
 
 const button = document.querySelector('#button');
 button.innerHTML = 'Submit';

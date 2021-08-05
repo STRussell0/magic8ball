@@ -50,9 +50,9 @@ button.addEventListener('click', function() {
     if (input.value < 1) {
         alert('Please ask a question!');
 }   else {
-    shake();
-    ask.innerHTML = response[Math.floor(Math.random() * response.length)];
-    setTimeout(hideAll, 2000);
+        shake();
+        ask.innerHTML = response[Math.floor(Math.random() * response.length)];
+        setTimeout(hideAll, 2000);
     
 }});
 
@@ -88,8 +88,8 @@ function returnAll() {
 // function that will add a class that will animate the magic 8 ball, but after 2 seconds, it will be removed.
 
 function shake() {
-    start.classList.add('shake');
 
+    start.classList.add('shake');
     setTimeout(() => start.classList.remove('shake'), 2000)
 }
 

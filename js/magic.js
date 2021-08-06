@@ -49,6 +49,8 @@ button.addEventListener('click', function() {
 
     if (input.value < 1) {
         alert('Please ask a question!');
+}   else if (!input.value.includes('?')){
+        alert('This needs a question mark!');
 }   else {
         shake();
         ask.innerHTML = response[Math.floor(Math.random() * response.length)];
